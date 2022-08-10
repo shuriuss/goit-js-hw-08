@@ -37,8 +37,8 @@ function submit(event) {
         return
     }
 
-    console.log(`Пошта: ${data.email}`);
-    console.log(`Повідомлення: ${data.message}`);
+    console.log(data);
+   
     localStorage.removeItem(LOCALSTORAGE_KEY)
     event.currentTarget.reset()
 }
