@@ -27,10 +27,15 @@ save()
 
 function submit(event) {
     event.preventDefault()
+       
     const data = {
         email: form.email.value,
         message: form.message.value
     };
+    if (!(data.email && data.message)){
+        alert('Введіть данні')
+        return
+    }
 
     console.log(`Почта: ${data.email}`);
     console.log(`Сообщение: ${data.message}`);
